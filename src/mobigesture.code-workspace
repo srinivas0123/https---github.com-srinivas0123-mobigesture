@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../mobigestureApi"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../personnel/reactjs-express-app"
+		}
+	],
+	"settings": {}
+}

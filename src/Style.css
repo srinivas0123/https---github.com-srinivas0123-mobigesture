@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    position: relative;
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+p,span,a{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+input{
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+div#root, div.main, div.main div.main-page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+div.main div.main-page{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+div.left-panel{
+    position: relative;
+    width: calc(30% - 1px);
+    height: 100%;
+    border-right: 1px solid #000000;
+    background-color: #ddd;
+}
+div.content-panel{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: #eee;
+    padding-left: 5% ;
+}
+div.route-options-wrapper,div.route-option{
+    width: 100%;
+}
+div.route-option p{
+    width: 100%;
+    text-align: center;
+}
+div.route-option{
+    padding: 12px 0;
+}
+div.route-option:hover{
+    background-color: #aaa;
+}
+div.route-option:hover p{
+    text-decoration: underline;
+}
+div.route-option a{
+ 
+ color: #000000;
+ font-size: 14px;
+ text-decoration: none;
+}
+div.route-option a.active{
+    font-weight: bold;
+}
+div.create-user-panel{
+    width: 50%;
+    padding-top: 5vh;
+}
+div.form-item{
+width: 100%;
+padding: 16px 0;
+}
+input.common-input{
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    font-size: 16px;
+    height: 34px;
+    width: 100%;
+    border-radius: 4px;
+}
+textarea.common-textarea{
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 4px;
+}
+div.dd-main-panel{
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    background-color: #999;
+}
+div.dd-main-panel-content{
+    padding: 10px 0;
+}
+
+div.dd-main-panel:hover{
+    cursor: pointer;
+}
+
+div.dd-main-panel div.dd-panel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+}
+div.dd-main-panel div.dd-panel div.dd-panel-content{
+    flex: 1;
+}
+
+div.dd-float-panel{
+    position: absolute;
+    width:100%;
+    background-color: #ccc;
+    border: 1px solid #fff;
+    left:0;
+    top:100%;
+    display: none;
+}
+
+div.dd-float-panel.show{
+    display: block;
+}
+div.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 6px;
+}
+div.option:hover:not(.no-hover){
+    background-color: #999;
+}
+div.option.no-hover:hover span{
+    text-decoration: underline;
+}
+div.option.no-hover{
+    margin: 4px 0;
+}
+div.option.no-hover span:nth-child(2){
+    font-size: 14px;
+}
+div.dd-search-panel{
+    padding: 6px;
+    border-bottom: 1px solid #aaa;
+}
+
+div.dd-search-panel input{
+    width: 100%;
+    padding: 4px 0;
+    border-radius: 4px;
+
+}
+
+div.drop-down-icon.open{
+    transform: rotate(90deg);
+}
+div.drop-down-icon.close{
+    transform: rotate(270deg);
+}
+p.selected-country-title{
+    margin: 10px 0;
+}
